@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_3</title>
+</head>
+
+<body>
+    <h1>Formulario de Registro</h1>
+    <form>
+        <label>Nombre de Usuario</label>
+        <input type="text" name="user" placeholder="Ingrese su nombre" />
+        <label>Email</label>
+        <input type="email" name="email" placeholder="ingrese su email" />
+        <br />
+        <label>Contraseña:</label>
+        <input type="password" name="contraseña" placeholder="Ingrese su contraseña" />
+        <label>Sexo</label>
+        <select name="sexo">
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+            <option value="No especificar">No especificar</option>
+        </select>
+        <br />
+        <label>País</label>
+        <input type="text" name="país" placeholder="Ingrese su País" />
+        <br />
+        <label>Subir tu foto</label>
+        <input type="file" accept="image/*" />
+        <br />
+        <label>Cuentanos más sobre ti</label><br />
+        <textarea name="Más sobre ti" cols="30" rows="10" placeholder="Cuentanos algo sobre ti"></textarea>
+        <br />
+        <label>Cuanto sabes de HTML5?</label>
+        <input type="range" min="0" max="10" step="1" value="6" />
+        <br />
+        <label>Desea suscribirse a nuestro boletín?</label>
+        <input type="radio" />
+        <label>Si</label>
+        <input type="radio" />
+        <label>No</label>
+        <label>Cada cuantos dias desea recibirlo?</label>
+        <input type="number">
+        <br />
+        <input type="checkbox">
+        <label>He leido los terminos de condiciones y uso</label>
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+    </form>
+</body>
+
+</html>

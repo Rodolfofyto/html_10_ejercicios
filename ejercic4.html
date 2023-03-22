@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_4</title>
+    <style>
+
+        section{
+            border: solid 1px black;
+            width: 23%;
+            padding: 1%;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            margin: 1%;
+        }
+
+        .body__input,
+        .body__select {
+            width: 300px;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            margin-bottom: 2%;
+            border: solid 1px lightblue;
+        }
+
+        .body__select {
+            width: 305px;
+            background-color: lightgrey;
+
+        }
+
+        .body__button {
+            margin: 1%;
+            margin-bottom: 5%;
+            padding: 1%;
+            border-radius: 10%;
+            background-color: rgb(7, 160, 211);
+            color: #ffffff;
+            border: none;
+        }
+
+        .body__output {
+            margin: 1%;
+            border: dashed 2px lightblue;
+            padding: 1% 5%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <label>Inputs y Output</label>
+    <script>
+        function calcular1() {
+            res.value = op1.value * op2.value;
+        }
+    </script>
+
+    <input type="number" id="op1" value="1" onchange=calcular1();>x
+    <input type="number" id="op2" value="1" onchange=calcular1();>=
+    <output id="res" for="op1 op2">1</output>
+    <br />
+    <br />
+    <br />
+    <section>
+        <div>
+            <input class="body__input" type="number" id="operando1" value="0" />
+            <select class="body__select" name="" id="operacion">
+                <option class="select__option" value="suma">+</option>
+                <option class="select__option" value="resta">-</option>
+                <option class="select__option" value="multi">*</option>
+                <option class="select__option" value="divi">/</option>
+            </select>
+            <input class="body__input" type="number" id="operando2" value="0" />
+            <br>
+        </div>
+        <button class="body__button" onclick="calcular()">Calcular</button>
+        <br>
+        <output class="body__output" id="resultado">0</output>
+        <script>
+            function calcular() {
+                switch (operacion.value) {
+                    case "suma": resultado.value = parseFloat(operando1.value) + parseFloat(operando2.value);
+                        break;
+                    case "resta": resultado.value = operando1.value - operando2.value;
+                        break;
+                    case "multi": resultado.value = operando1.value * operando2.value;
+                        break;
+                    default: resultado.value = operando1.value / operando2.value;
+                }
+            }
+        </script>
+    </section>
+</body>
+
+</html>

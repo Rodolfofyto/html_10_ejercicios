@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_2</title>
+</head>
+<style>
+    form {
+        width: 35%;
+        border: solid 1px rgb(72, 63, 247);
+        padding: 1%;
+        color: darkblue;
+    }
+    label {
+            display: inline-block;
+            width: 120px;
+        }
+
+    input {
+        margin-bottom: 1%;
+    }
+
+    fieldset,
+    input,
+    select,
+    textarea {
+        border: solid 1px rgb(72, 63, 247);
+    }
+
+    select {
+        background-color: rgb(232, 232, 232);
+    }
+    button{
+        background-color: rgb(28, 179, 239);
+    }
+</style>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label>Nombre:</label>
+            <input type="text" name="nombre" />
+            <br />
+            <label>Contraseña:</label>
+            <input type="password" name="contraseña" />
+            <br />
+            <label>Sexo</label>
+            <input type="radio" name="radio" />
+            <span>Hombre</span>
+            <input type="radio" name="radio" value="Hombre" />
+            <span>Mujer</span>
+            <input type="radio" name="radio" />
+            <span>No binario</span>
+            <br />
+            <label>Experiencia:</label>
+            <select name="experiencia">
+                <option value="1 a 9 años">1 a 9 años</option>
+                <option value="10 a 19 años">10 a 19 años</option>
+                <option value="20 a 29 años">20 a 29 años</option>
+                <option value="30 a 39 años">30 a 39 años</option>
+                <option value="40 a 49 años">40 a 49 años</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Idiomas</legend>
+            <input type="checkbox" name="idioma" value="java" />
+            <label>Java</label>
+            <input type="checkbox" name="idioma" value="C/C++" />
+            <label>C/C++</label>
+            <input type="checkbox" name="idioma" value="C#" />
+            <label>C#</label>
+        </fieldset>
+        <fieldset>
+            <legend>Detalles</legend>
+            <textarea name="detalles" cols="30" rows="10" placeholder="Indica quí los detalles..."></textarea>
+        </fieldset>
+        <br />
+        <button type="submit">Enviar</button>
+        <button type="submit">Borrar</button>
+    </form>
+</body>
+
+</html>
